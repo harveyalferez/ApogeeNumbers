@@ -30,7 +30,6 @@
       <ul class="nav-links" id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html" aria-current="page">Contact</a></li>
       </ul>
@@ -113,7 +112,7 @@
     <div class="grid">
       <div><a class="foot-logo" href="index.html"><img src="Logo1_transparent.svg" alt="Apogee Numbers" width="150" height="66"></a>
         <p class="tagline-foot">Strategic Financial Support<br>for Growing Businesses</p></div>
-      <div><h4>Explore</h4><ul><li><a href="services.html">Services</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Explore</h4><ul><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div><h4>Get in touch</h4><ul><li><a href="mailto:dorisv@apogeenumbers.com">dorisv@apogeenumbers.com</a></li></ul></div>
     </div>
     <div class="foot-bottom"><span>© 2026 Apogee Numbers, LLC · Tennessee</span><span>QuickBooks Online Certified ProAdvisor</span></div>
@@ -143,7 +142,7 @@
       "Email: " + email + "\n" +
       "Business: " + form.business.value.trim() + "\n" +
       "Needs: " + form.need.value + "\n\n" +
-      form.message.value.trim();
+      "Tell me a bit more:\n" + form.message.value.trim();
     window.location.href = "mailto:dorisv@apogeenumbers.com?subject=" +
       encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
     note.textContent = "Opening your email app… if nothing happens, email dorisv@apogeenumbers.com directly.";

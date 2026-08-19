@@ -134,7 +134,7 @@ img, svg { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 100px;
+  min-height: 132px;
   gap: 1rem;
 }
 .brand {
@@ -151,7 +151,7 @@ img, svg { max-width: 100%; display: block; }
 .brand .peak { width: 26px; height: 26px; flex: none; }
 .brand b { font-weight: 600; }
 .brand .thin { color: var(--teal); }
-.brand img.logo { height: 72px; width: auto; display: block; }
+.brand img.logo { height: 108px; width: auto; display: block; }
 
 .nav-links {
   display: flex;
@@ -595,7 +595,7 @@ section { padding: 5.5rem 0; }
   margin-bottom: 1rem;
   box-shadow: 0 12px 30px -18px rgba(0,0,0,0.6);
 }
-.foot-logo img { height: 66px; width: auto; display: block; }
+.foot-logo img { height: 132px; width: auto; display: block; }
 .site-foot .brand .thin { color: var(--gold); }
 .site-foot h4 {
   color: #fff;
@@ -614,7 +614,7 @@ section { padding: 5.5rem 0; }
   font-family: "Montserrat", system-ui, sans-serif;
   font-style: italic;
   font-weight: 700;
-  color: #cfe0f1;
+  color: #f0bd09;
   max-width: 34ch;
 }
 .foot-bottom {
@@ -632,8 +632,14 @@ section { padding: 5.5rem 0; }
 .qbo-badge {
   height: 112px;
   width: auto;
-  vertical-align: middle;
-  margin-left: 0.5rem;
+  display: block;
+}
+.badge-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 0.6rem;
 }
 
 /* single-line section heading (wraps on small screens) */
@@ -642,10 +648,10 @@ section { padding: 5.5rem 0; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 860px) {
-  .site-nav .wrap { min-height: 84px; }
+  .site-nav .wrap { min-height: 112px; }
   .nav-links {
     position: fixed;
-    inset: 84px 0 auto 0;
+    inset: 112px 0 auto 0;
     background: var(--paper);
     flex-direction: column;
     align-items: flex-start;
@@ -662,7 +668,7 @@ section { padding: 5.5rem 0; }
   .nav-links a::after { display: none; }
   .nav-toggle { display: block; }
   .nav-right .btn { display: none; }
-  .brand img.logo { height: 60px; }
+  .brand img.logo { height: 90px; }
 
   .hero .grid, .split, .contact-grid, .founder { grid-template-columns: 1fr; gap: 2.2rem; }
   .hero-logo { max-width: 360px; margin: 0 auto; }
