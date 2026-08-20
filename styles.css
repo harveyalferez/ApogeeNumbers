@@ -648,10 +648,10 @@ section { padding: 5.5rem 0; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 860px) {
-  .site-nav .wrap { min-height: 112px; }
+  .site-nav .wrap { min-height: 88px; }
   .nav-links {
     position: fixed;
-    inset: 112px 0 auto 0;
+    inset: 88px 0 auto 0;
     background: var(--paper);
     flex-direction: column;
     align-items: flex-start;
@@ -668,10 +668,13 @@ section { padding: 5.5rem 0; }
   .nav-links a::after { display: none; }
   .nav-toggle { display: block; }
   .nav-right .btn { display: none; }
-  .brand img.logo { height: 90px; }
+  .brand img.logo { height: 60px; }
 
   .hero .grid, .split, .contact-grid, .founder { grid-template-columns: 1fr; gap: 2.2rem; }
-  .hero-logo { max-width: 360px; margin: 0 auto; }
+  .hero-logo { max-width: 340px; margin: 0 auto; padding: 1.8rem; }
+  .hero .tagline { white-space: normal !important; font-size: 1.05rem !important; }
+  .foot-logo img { height: 96px; }
+  .qbo-badge { height: 88px; }
   .site-foot .grid { grid-template-columns: 1fr; gap: 1.8rem; }
   section { padding: 4rem 0; }
 }
